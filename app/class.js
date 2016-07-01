@@ -1,1 +1,1 @@
-module.exports = 'Injected!';
+module.exports = 'Works!';

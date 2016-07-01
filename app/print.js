@@ -1,6 +1,6 @@
 'use strict';
 
-let _class = Mapper.get('class');
+let _class = Pointer.get('class');
 
 module.exports = class {
     static print(){

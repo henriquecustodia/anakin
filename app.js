@@ -1,15 +1,15 @@
 'use strict';
 
-let Mapper = require('./lib/Mapper');
+let Pointer = require('./lib/Pointer');
 
-Mapper.map({
+Pointer.map({
     'class': 'app/class',
     'Printer': 'app/print',
 });
 
-global.Mapper = Mapper;
+global.Pointer = Pointer;
 
-let Printer = Mapper.get('Printer');
+let Printer = Pointer.get('Printer');
 
 Printer.print();
 
