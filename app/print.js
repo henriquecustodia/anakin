@@ -1,9 +1,7 @@
 'use strict';
 
-let _class = Pointer.get('class');
-
 module.exports = class {
     static print(){
-        console.info(`it was ${_class}!`);
+        console.info(`it's ${Pointer.get('class')}!`);
     }
 }
