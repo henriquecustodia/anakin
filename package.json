@@ -1,18 +1,18 @@
 {
-  "name": "servant",
+  "name": "anakin",
   "version": "0.0.1",
   "description": "This Node module maps all application's dependencies and centralizes everything, at only one place",
   "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/henriquecustodia/Servant.git"
+    "url": "git+https://github.com/henriquecustodia/anakin.git"
   },
   "keywords": [
     "inject",
     "injection",
     "dependencies",
-    "servant"
+    "anakin"
   ],
   "author": {
     "name": "Henrique Custódia",
@@ -20,7 +20,7 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/henriquecustodia/Servant/issues"
+    "url": "https://github.com/henriquecustodia/anakin/issues"
   },
-  "homepage": "https://github.com/henriquecustodia/Servant#readme"
+  "homepage": "https://github.com/henriquecustodia/anakin#readme"
 }

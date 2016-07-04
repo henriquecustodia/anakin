@@ -1,18 +1,18 @@
 'use strict';
 
 const Path = require('path');
-const PointerError = require('./servantError');
+const AnakinError = require('./anakinError');
 
 let storage = new Map();
 
-module.exports = class Pointer {
+module.exports = class Anakin {
     static map(config) {
         for (let prop in config) {
 
             let path = config[prop];
 
             if (typeof path !== 'string') {
-                throw new PointerError('The path has to be a String type');
+                throw new AnakinError('The path has to be a String type');
             }
 
             path = './' + Path.relative(__dirname, path);
@@ -23,7 +23,7 @@ module.exports = class Pointer {
 
     static get(dependency) {
         if (!storage.has(dependency)) {
-            throw new PointerError(`Has not pointer for '${dependency}'`);
+            throw new AnakinError(`Has not Anakin for '${dependency}'`);
         }
 
         let path = storage.get(dependency);

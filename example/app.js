@@ -1,15 +1,15 @@
 'use strict';
 
-let Servant = require('./../index');
+let anakin = require('./../index');
 
-Servant.map({
+anakin.map({
     'class': 'example/class',
     'Printer': 'example/print',
 });
 
-global.Servant = Servant;
+global.anakin = anakin;
 
-let Printer = Servant.get('Printer');
+let Printer = anakin.get('Printer');
 
 Printer.print();
 
