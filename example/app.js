@@ -1,10 +1,10 @@
 'use strict';
 
-let Pointer = require('./lib/Pointer');
+let Pointer = require('./../Pointer');
 
 Pointer.map({
-    'class': 'app/class',
-    'Printer': 'app/print',
+    'class': 'example/class',
+    'Printer': 'example/print',
 });
 
 global.Pointer = Pointer;

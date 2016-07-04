@@ -1,0 +1,25 @@
+{
+  "name": "pointer",
+  "version": "0.0.1",
+  "description": "This Node module maps all application's dependencies and centralizes everything, at only one place",
+  "main": "Pointer.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henriquecustodia/Pointer.git"
+  },
+  "keywords": [
+    "inject",
+    "injection",
+    "dependencies"
+  ],
+  "author": {
+    "name": "Henrique Custódia",
+    "email": "martinshenrique8@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henriquecustodia/Pointer/issues"
+  },
+  "homepage": "https://github.com/henriquecustodia/Pointer#readme"
+}
