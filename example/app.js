@@ -1,15 +1,15 @@
 'use strict';
 
-let Pointer = require('./../Pointer');
+let Servant = require('./../index');
 
-Pointer.map({
+Servant.map({
     'class': 'example/class',
     'Printer': 'example/print',
 });
 
-global.Pointer = Pointer;
+global.Servant = Servant;
 
-let Printer = Pointer.get('Printer');
+let Printer = Servant.get('Printer');
 
 Printer.print();
 

@@ -1,7 +1,7 @@
 'use strict';
 
 const Path = require('path');
-const PointerError = require('./PointerError');
+const PointerError = require('./servantError');
 
 let storage = new Map();
 
