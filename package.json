@@ -11,7 +11,8 @@
   "keywords": [
     "inject",
     "injection",
-    "dependencies"
+    "dependencies",
+    "pointer"
   ],
   "author": {
     "name": "Henrique Custódia",
