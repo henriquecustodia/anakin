@@ -1,9 +1,6 @@
 # Anakin
 This node module maps all application's dependencies and centralizes everything, at only one place
 
-## Warning
-This module has been developed using es6 features. Use the 4.4.5 or higher nodeJS' version.
-
 ## Quick start
 ```javascript
 //module/to/get/  module.js
