@@ -1,8 +1,6 @@
 'use strict';
 
-let Anakin = require('./../index');
-
-let anakin = new Anakin({
+let anakin = require('./../index')({
     base: __dirname,
     singleton: true
 });
