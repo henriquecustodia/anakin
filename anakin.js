@@ -6,7 +6,7 @@ const logger = require('./anakin-logger');
 const AnakinGetter = require('./anakin-getter');
 
 module.exports = options => {
-    storage = new Map();
+    let storage = new Map();
 
     options = options || {};
     options.base = options.base || '';
