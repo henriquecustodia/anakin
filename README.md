@@ -21,6 +21,7 @@ console.info(something); //I'm here`
 ```
 ## API
 * `map` (mapperObj: **Object**): void
+
 > This method maps all dependencies. The dependecy path does not need has a file extension (e.g .js or .json) because this method uses the `require` method internally.   
 ```javascript
     anakin.map({
@@ -28,6 +29,7 @@ console.info(something); //I'm here`
     });
 ``` 
 * `get` (module: **String**): any
+
 > This method get a dependency was set in mapper object.   
 ```javascript
     anakin.get('someDependency');
