@@ -1,10 +1,15 @@
 'use strict';
 
-let anakin = require('./../index');
+let Anakin = require('./../index');
+
+let anakin = new Anakin({
+    base: __dirname,
+    singleton: true
+});
 
 anakin.map({
-    'class': 'example/class',
-    'Printer': 'example/print',
+    'class': 'class',
+    'Printer': 'print',
 });
 
 global.anakin = anakin;
