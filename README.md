@@ -28,6 +28,7 @@ console.info(something); //I'm here`
         dependencyName: 'module/to/get/module.js'
     });
 ``` 
+
 * `get` (module: **String**): any
 
 > This method get a dependency was set in mapper object.   
