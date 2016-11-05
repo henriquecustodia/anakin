@@ -1,6 +1,5 @@
 'use strict';
 
-const Path = require('path');
 const AnakinError = require('./anakin-error');
 const logger = require('./anakin-logger');
 const AnakinGetter = require('./anakin-getter');

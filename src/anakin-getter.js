@@ -7,7 +7,7 @@ module.exports.findModule = (dependencyName, path) => {
     try {
         return require(path);
     } catch (err){
-        throw new Error(`Cannot find '${dependencyName}' module at '${path}'`);
+        throw new Error(`Cannot find '${dependencyName}' dependency at '${path}'`);
     }
 }
 

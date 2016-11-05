@@ -1,1 +1,1 @@
-module.exports = require('./anakin');
+module.exports = require('./src/anakin');
