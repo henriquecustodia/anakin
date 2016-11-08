@@ -1,5 +1,9 @@
 
 <div align="center">
+    <img src="https://github.com/henriquecustodia/anakin/blob/master/anakin.gif">
+</div>
+
+<div align="center">
     <h1> Anakin </h1>
     <h3> This node module maps all application's dependencies and centralizes everything, at only one place. </h3>
 </div>
