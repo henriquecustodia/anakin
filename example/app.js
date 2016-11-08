@@ -6,13 +6,12 @@ let anakin = require('./../index')({
 });
 
 anakin.map({
-    'class': 'class',
-    'Printer': 'print',
+    'welcome': 'welcome',
+    'printer': 'print',
 });
 
-global.anakin = anakin;
+global.anakinInjector = anakin.get;
 
-let Printer = anakin.get('Printer');
+anakinInjector('printer')('Henrique');
 
-Printer.print();
 

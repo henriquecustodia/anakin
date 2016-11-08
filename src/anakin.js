@@ -2,13 +2,15 @@
 
 const AnakinError = require('./anakin-error');
 const logger = require('./anakin-logger');
-const AnakinGetter = require('./anakin-getter');
+const AnakinUseful = require('./anakin-useful');
 
-module.exports = options => {
+module.exports = (options = {}) => {
     let storage = new Map();
 
-    options = options || {};
-    options.base = options.base || '';
+    if (!options.base || typeof options.base !== 'string') {
+        throw new AnakinError('The base property has to be a String valid.');
+    }
+
     options.singleton = options.singleton === true;
 
     function map(config) {
@@ -17,12 +19,12 @@ module.exports = options => {
             let relativePath = config[dependencyName];
 
             if (typeof relativePath !== 'string') {
-                throw new AnakinError('The path has to be a String type');
+                throw new AnakinError('The path has to be a String type.');
             }
 
-            let absolutePath = AnakinGetter.getAbsolutePath(options.base, relativePath);
+            let absolutePath = AnakinUseful.getAbsolutePath(options.base, relativePath);
 
-            let mappedObject = AnakinGetter.findModule(dependencyName, absolutePath);
+            let mappedObject = AnakinUseful.findModule(dependencyName, absolutePath);
 
             logger(dependencyName, relativePath);
 
@@ -37,7 +39,7 @@ module.exports = options => {
 
     function get(dependency) {
         if (!storage.has(dependency)) {
-            throw new AnakinError(`Does not exists a dependency like '${dependency}'`);
+            throw new AnakinError(`Does not exists a dependency like '${dependency}'.`);
         }
 
         if (options.singleton) {
