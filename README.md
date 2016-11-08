@@ -1,6 +1,8 @@
 
 <div align="center">
-    <img src="https://github.com/henriquecustodia/anakin/blob/master/anakin.gif">
+    <a href="http://www.starwars.com/films/star-wars-episode-iii-revenge-of-the-sith">
+        <img src="https://github.com/henriquecustodia/anakin/blob/master/anakin.gif">
+    </a>   
 </div>
 
 <div align="center">
