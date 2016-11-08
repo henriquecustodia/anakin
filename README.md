@@ -1,6 +1,8 @@
 # Anakin
 This node module maps all application's dependencies and centralizes everything, at only one place.
 
+[![Build Status](https://travis-ci.org/henriquecustodia/anakin.svg?branch=master)](https://travis-ci.org/henriquecustodia/anakin)
+
 ## Quick start
 ```javascript
 //module/to/get/  module.js
