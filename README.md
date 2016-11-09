@@ -19,6 +19,11 @@
 ## Usage
 This [example](https://github.com/henriquecustodia/anakin-example) shows how to use Anakin easily :smile:
 
+## How to install
+```javascript
+npm install --save anakin
+```
+
 ## Quick start
 ```javascript
 //module/to/get/  module.js
